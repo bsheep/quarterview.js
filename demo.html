@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"> 
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>title</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script type="text/javascript" src="./quarterview.js"></script>
+        <link rel="stylesheet" type="text/css" charset="utf-8" href="./demo.css">
+        <link rel="stylesheet" type="text/css" charset="utf-8" href="./quarterview.css">
+        <script>
+            $(function() {
+                setTimeout(function() {
+                    var map = $('#map').create_view({
+                        'width': 8,
+                        'height': 8
+                    });
+                    var material = $('#material').create_palette({
+                        'map': map
+                    });
+                },500);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1>Quarterview.js demo</h1>
+            </div>
+            <div id="middle">
+                <div id="main">
+                    <div id="map"></div>
+                    <div id="material"><img src="./demo.png" /></div>
+                    <div id="mouse" class="mouse_axis">0</div>
+                    <div id="quarter" class="mouse_axis">0</div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>Copyright &copy; 2011 bsheep</p>
+            </div>
+        </div>
+    </body>
+</html>

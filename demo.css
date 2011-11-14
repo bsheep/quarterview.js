@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#header, #footer {
+    height: 50px;
+    width: 840px;
+    text-align: center;
+}
+#middle {
+    height: 550px;
+    position: relative;
+}
+
+#main {}
+#map {
+    position: absolute;
+    top: 0px;
+    left: 300px;
+}
+#material {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 300px;
+    overflow: scroll;
+    background: black;
+}
+
+.mouse_axis {
+    position: absolute;
+    top: 0px;
+    width: 64px;
+    height: 14px;
+    border: 1px solid black;
+    font-size: 12px;
+    padding: 2px;
+    text-align: right;
+    background: white;
+}
+#mouse {
+    left: 0px;
+}
+#quarter {
+    left: 84px;
+}
